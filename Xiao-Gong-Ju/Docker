@@ -1,0 +1,55 @@
+ - 预备知识:    Linux(知道一些命令例如cd、mkdir即可)、SpringBoot, 上手门槛不高
+
+ - Docker是什么   
+              * Docker是一个开源的应用容器引擎, 可以配环境, 可以跨平台(相当于仓库、应用商店)
+              * (环境部署, 每一个机器都要部署环境, 费时费力, 使用Docker省时省力)
+              * Docker的核心思想是集装箱(看它的logo ~ )
+
+ - Docker安装(看官方文档即可)
+
+ - Docker命令: 镜像命令、容器命令、操作命令......
+              Docker的常用命令: 
+                                   *  帮助命令 docker version      #显示Docker的版本信息
+                                              docker info          #显示Docker的系统信息
+                                              docker 命令 --help   #万能命令
+                                   * 镜像命令(docker images)   
+                                              docker rmi -f  镜像id               #删除指定的镜像
+                                              docker rmi -f  镜像id 镜像id 镜像id  #删除多个镜像
+                                              docker rmi -f $(docker images -aq)  #删除全部的镜像
+                                   * 容器命令(有了镜像才可以创建容器)
+    
+
+
+ - Docker镜像
+
+
+
+ - 容器数据卷
+
+
+
+
+ - DockerFile
+
+
+
+
+ - Docker网络原理
+
+
+
+
+ - IDEA整合Docker
+
+
+
+ - Docker Compose
+
+
+
+
+ - Docker Swarm
+
+
+
+ - CI\CD Jenkins
