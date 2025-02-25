@@ -4,11 +4,12 @@
 
 
 - 知道相关的命令
-cd    切换目录
+cd    切换目录  (change directory)
 cd ..  (两个点) 它的意思是 " 父目录 " 或当前目录之上的一个目录
-pwd   显示当前目录
-mkdir 创建当前目录或文件夹
-rm    删除一个文件或目录
+pwd   显示当前目录  (print watching directory)
+mkdir 创建当前目录或文件夹 (make directory)
+rm    删除一个文件或目录   (remove)
+ls    列出目录内容
 
 
 - Vim
@@ -21,4 +22,6 @@ rm    删除一个文件或目录
 
 
 - 进程、线程
+进程简单理解就是运行的程序
+线程网页搜索的回答是操作系统能够进行运算调度的最小单位
 
