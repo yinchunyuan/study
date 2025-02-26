@@ -6,13 +6,13 @@
 
 
 - 爬虫: 主要是利用代码来爬取网页的数据(各种分类), 一般用Python来爬, 其他的编程语言原则上也没问题, 但是最合适的还是Python
-- JavaScript似乎也要用上(JS逆向) 
-滑块、图形验证码之类的
+        JavaScript似乎也要用上(JS逆向) 
+        滑块、图形验证码之类的
 
 
-- 爬虫分类: 通用爬虫、聚焦爬虫、增量式爬虫
+- 爬虫分类: 通用爬虫、聚焦爬虫、增量式爬虫(按不同的目的有不同的分类)
 
 
-- 爬虫模块: requests 作用: 模仿浏览器发送请求
-           scrapy框架: 常用的爬虫框架Scrapy;  Scrapy是一个基于Twisted的开源的Python爬虫框架
+- 爬虫模块: · requests 作用: 模仿浏览器发送请求
+           · scrapy框架: 常用的爬虫框架Scrapy;  Scrapy是一个基于Twisted的开源的Python爬虫框架
 
