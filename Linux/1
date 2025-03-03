@@ -4,13 +4,18 @@
 
 
 - 知道相关的命令
-cd    切换目录  (change directory)
-cd ..  (两个点) 它的意思是 " 父目录 " 或当前目录之上的一个目录
-pwd   显示当前目录  (print watching directory)
-mkdir 创建当前目录或文件夹 (make directory)
-rm    删除一个文件或目录   (remove)
-ls    列出目录内容
-
+cd              切换目录            (change directory)
+cd ..           (两个点) 它的意思是 " 父目录 " 或当前目录之上的一个目录        作用: 返回当前目录之上的一个目录
+pwd             显示当前工作目录      (print watching directory)
+mkdir           创建目录  (make directory)
+rm[文件名]       删除文件, 文件删除后不能恢复    (remove)
+touch[文件名]    新建文件
+ls              列出目录内容
+date/cal        显示时间、日期
+su              切换到另一个用户       exit 返回之前的用户    (switch user)
+mv              移动文件或目录
+绝对路径、相对路径: 绝对路径以 "/" 开头; 不是绝对路径的其他路径是相对路径  相对路径以当前所在的工作目录为起点
+选项大部分以 "-" 开头
 
 - Vim
 
