@@ -1,6 +1,4 @@
-- Linux下可执行程序的格式是elf, Windows则是PE格式
-
-
 - 部署工作环境
-            * 安装虚拟机 VirtualBox
+            * 安装虚拟机 VirtualBox和 Linux 发行版, 作者本人安装的Linux发行版是Ubuntu
+            * 
 
