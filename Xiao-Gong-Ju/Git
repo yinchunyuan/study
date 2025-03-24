@@ -28,7 +28,7 @@ CS61B 实验4 有关于Git的详细使用
          · git push -f origin main  强制推送本地库到远程库
          · git log 显示提交的历史记录
          · git restore 把文件恢复到最近提交的版本     恢复特定的提交 git restore --source=[commitID] [path_to_file]
-         · git rm 文件名    删除文件
+         · git rm 文件名 删除文件           强制删除: git rm -f 文件名
 
 
 
