@@ -5,7 +5,7 @@
 
 - 知道相关的命令 
 cd                  切换目录            (change directory)
-cd ..               (两个点) 它的意思是 " 父目录 " 或当前目录之上的一个目录        作用: 返回当前目录之上的一个目录
+cd ..               (两个点) 它的意思是 " 父目录 " 或当前目录之上的一个目录,并且cd和点之间有空格        作用: 返回当前目录之上的一个目录
 pwd                 显示当前工作目录      (print watching directory)
 mkdir               创建目录  (make directory)
 rm[文件名]           删除文件, 文件删除后不能恢复    (remove)
