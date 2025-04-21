@@ -2,9 +2,36 @@
           FROM ruby:3.2   指定基础镜像ruby的版本为 3.2
           WORKDIR /app    设置工作目录为 /app
           COPY . .        将当前构建上下文（本地当前目录）的所有文件复制到镜像的工作目录（/app ）中
-          RUN apt update && apt install -y curl git build-essential libssl-dev libreadline-dev zlib1g-dev ruby-full vim:   原先是在ubuntu镜像里安装一系列软件包, 现在基础镜像变更, 不再需要
-          RUN gem install jekyll bundler                安装jekyll和bundler, 因基础镜像变更, 安装方式可能改变, 所以删除
-          RUN echo "echo 'set your proxy and clone the repository...：   设置代理和克隆仓库相关命令, 可能在新构建逻辑中不需要
-          WORKDIR /workspace：      原工作目录设置为/workspace, 现在改为/app, 所以删除
-          EXPOSE 4000：             原计划暴露4000端口, 新构建逻辑可能不再需要暴露此端口
-          CMD ["bash"]：            原容器启动默认命令, 被新的CMD指令替代 
+          RUN apk add --no-cache bash build-base git   执行
+          RUN bundle install --path=~/vendor/bundler   执行
+          EXPOSE 4000：             意思是指定的容器暴露的端口是4000
+          CMD ["bash"]：            指定容器跑起来的命令是 bash 
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+但是代码并不完整(AI搜索)
+1. # RUN bundle install --path=~/vendor/bundler 被注释
+2. CMD bash/bin 有问题   bash/bin 不是常见的可执行程序路径格式, 可能使容器不能正常工作
+3. # RUN apk add --no-cache bash build-base git 被注释
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+2025.4.16 周三下午接-----------2025.4.21 周一正式开搞
+实现
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+其他的小东西:(借鉴知乎的文章以及其他)
+  Docker是一个用 Go 语言实现的开源项目  快速部署
+- Dockerfile 是一种文本文件, 说明如何构建Docker镜像    Dockerfile 可以提高部署效率    Dockerfile的内容在编译之后生成的可执行程序是image
+
+- FROM     #制作基准镜像        FROM 镜像 
+- WORKDIR  #类似于Linux中的cd命令   但是和cd不一样的地方在于, 若输入的目录在不存在, 则WORKDIR会自动创建这个目录, 再进入该目录   
+- RUN      #运行
+- CI/CD    #指持续集成和持续交付/部署     在软件开发过程中自动化构建、测试和部署的流程  
