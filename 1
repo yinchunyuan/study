@@ -1,8 +1,8 @@
-代码的意思:
+代码的意思:(共8行代码, 3行注释)
           FROM ruby:3.2   意思是指定基础镜像ruby的版本为 3.2
           WORKDIR /app    意思是设置工作目录为 /app
-          COPY . .        意思是将当前构建上下文 (本地当前目录) 的所有文件复制到镜像的工作目录 (/app)  中
           RUN apk add --no-cache bash build-base git   执行
+          COPY . .        意思是将当前构建上下文 (本地当前目录) 的所有文件复制到镜像的工作目录 (/app)  中
           RUN bundle install --path=~/vendor/bundler   执行
           EXPOSE 4000：   意思是指定的容器暴露的端口是4000
           CMD ["bash"]：  意思是指定容器跑起来的命令是bash 
