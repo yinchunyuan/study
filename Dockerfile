@@ -1,6 +1,6 @@
 2025.4.21 周一 --- 2025.4.22 周二
 
-本文目的: 编写一个基于Ruby的Dockerfile
+本文目的: 编写一个基于Ruby的Dockerfile   共五个部分 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 一、 编写Dockerfile的注意事项:
                          * 最常用的五个参数: 1. FROM
@@ -16,8 +16,7 @@
                            ENV        指定当前容器的环境变量
                            ARG        构建参数, 运行时无效, 可以构建时临时修改变量
                            LABEL      指定元数据, 便于找到 Docker
-                           ONBUILD 
-
+                           USER       设置运行用户
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 二、 代码的意思:(共8行代码, 3行注释)
           FROM ruby:3.2   意思是指定基础镜像ruby的版本为 3.2
@@ -27,27 +26,32 @@
           RUN bundle install --path=~/vendor/bundler   执行
           EXPOSE 4000：   意思是指定的容器暴露的端口是4000
           CMD ["bash"]：  意思是指定容器跑起来的命令是bash 
-
-
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 三、 但是代码并不完整(AI搜索)
-1. # RUN bundle install --path=~/vendor/bundler 被注释
+1. # RUN bundle install --path=~/vendor/bundler 被注释, 使项目的 Gem 依赖不能安装
 2. CMD bash/bin 有问题   bash/bin 不是常见的可执行程序路径格式, 可能使容器不能正常工作
-3. # RUN apk add --no-cache bash build-base git 被注释
+3. # RUN apk add --no-cache bash build-base git 被注释, 包管理器是apk, 基础镜像ruby:3.2是基于Debian系统
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 四、 2025.4.16 周三下午接-----------2025.4.21 周一正式开搞
-新的实现
-
-
-
-
-
+新的Dockerfile实现(AI搜索, 不是自己写的)
+                FROM ruby:3.2  # 用官方 Ruby 镜像(基于Debian)
+                WORKDIR /app   # 设置工作目录 
+                RUN apt-get update -qq && \
+                    apt-get install -y nodejs npm && \
+                    npm install -g yarn && \
+                    rm -rf /var/lib/apt/lists/*         # 安装 Debian 系统依赖(Node.js 和 Yarn)
+                RUN gem install bundler jekyll          # 安装 Jekyll 和 Bundler
+                COPY Gemfile* ./                        # 先复制 Gemfile 以利用 Docker 缓存
+                RUN bundle install
+                COPY . .                                # 复制项目文件
+                EXPOSE 4000                             # 暴露端口
+                CMD ["bundle", "exec", "jekyll", "serve", "--host", "0.0.0.0", "--port", "4000"]    # 启动 Jekyll 服务
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 五、 2025.4.21 周一
 其他的小东西:(借鉴知乎的文章以及其他)
   Docker是一个用 Go 语言实现的开源项目  快速部署
-- Dockerfile 是一种文本文件, 说明如何构建Docker镜像    Dockerfile 可以提高部署效率    Dockerfile的内容在编译之后生成的可执行程序是image
+- Dockerfile 是一个文本文件, 用于构建Docker镜像    Dockerfile 可以提高部署效率    Dockerfile的内容在编译之后生成的可执行程序是image
 
 - FROM     #制作基准镜像        FROM 镜像 
 - WORKDIR  #类似于Linux中的cd命令   但是和cd不一样的地方在于, 若输入的目录在不存在, 则WORKDIR会自动创建这个目录, 再进入该目录   
