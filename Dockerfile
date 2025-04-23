@@ -50,11 +50,11 @@
 
 五、 2025.4.21 周一
 其他的小东西:(借鉴知乎的文章以及其他)
-  Docker是一个用 Go 语言实现的开源项目  快速部署
-- Dockerfile 是一个文本文件, 用于构建Docker镜像    Dockerfile 可以提高部署效率    Dockerfile的内容在编译之后生成的可执行程序是image
-- 构建镜像  docker build -t jekyll-begin .
-- 运行容器  docker run -p 4000:4000 jekyll-begin
-- FROM     #制作基准镜像        FROM 镜像 
-- WORKDIR  #类似于Linux中的cd命令   但是和cd不一样的地方在于, 若输入的目录在不存在, 则WORKDIR会自动创建这个目录, 再进入该目录   
-- RUN      #运行
-- CI/CD    #指持续集成和持续交付/部署     在软件开发过程中自动化构建、测试和部署的流程  
+              Docker是一个用 Go 语言实现的开源项目  快速部署
+            - Dockerfile 是一个文本文件, 用于构建Docker镜像    Dockerfile 可以提高部署效率    Dockerfile的内容在编译之后生成的可执行程序是image
+            - 构建镜像  docker build -t jekyll-begin .
+            - 运行容器  docker run -p 4000:4000 jekyll-begin
+            - FROM     #制作基准镜像        FROM 镜像 
+            - WORKDIR  #类似于Linux中的cd命令   但是和cd不一样的地方在于, 若输入的目录在不存在, 则WORKDIR会自动创建这个目录, 再进入该目录   
+            - RUN      #运行
+            - CI/CD    #指持续集成和持续交付/部署     在软件开发过程中自动化构建、测试和部署的流程  
