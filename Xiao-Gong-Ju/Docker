@@ -1,25 +1,39 @@
  - 预备知识:    Linux(知道一些命令例如cd、mkdir即可)、SpringBoot, 上手门槛不高
-
+               Xshell
+               DockerHub
+               先会使用命令, 再理解命令
+               官方文档
+           
  - Docker是什么   
               * Docker是一个开源的应用容器引擎, 可以配环境, 可以跨平台(相当于仓库、应用商店)
               * (环境部署, 每一个机器都要部署环境, 费时费力, 使用Docker省时省力)
               * Docker的核心思想是集装箱(看它的logo ~ )
 
  - Docker安装(看官方文档即可)
-   镜像(image)         可以创建容器
+   镜像(image)         可以创建容器   
    容器(container)
    仓库(repository)    
 
  - Docker命令: 镜像命令、容器命令、操作命令......
-              Docker的常用命令: 
+               Docker的常用命令: 
                                    *  帮助命令 docker version      #显示Docker的版本信息
                                               docker info          #显示Docker的系统信息
                                               docker 命令 --help   #万能命令
-                                   * 镜像命令(docker images)   
+                                   *  镜像命令(docker images 查看本地所有主机镜像)   
                                               docker rmi -f  镜像id               #删除指定的镜像
                                               docker rmi -f  镜像id 镜像id 镜像id  #删除多个镜像
                                               docker rmi -f $(docker images -aq)  #删除全部的镜像
-                                   * 容器命令(有了镜像才可以创建容器)
+                                              -a  显示所有镜像         all  
+                                              -q  只显示镜像的ID       quiet
+                                              -aq 显示所有的镜像
+                                              docker search  搜索镜像
+                                              docker pull    下载镜像      
+
+                                   *  容器命令(有了镜像才可以创建容器) 
+                                              docker run [可选参数] image   新建容器并启动     可选参数(-d 后台方式运行 || -it 使用交互方式运行, 进入容器查看内容  ||  -P 指定容器的端口  || -p 随机指定端口)
+                                              docker ps 列出运行的容器     -a 列出当前正在运行的容器, 带出历史运行过的容器
+                                              docker
+                                              docker
     
 
 
