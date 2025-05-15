@@ -32,9 +32,23 @@
                                    *  容器命令(有了镜像才可以创建容器) 
                                               docker run [可选参数] image   新建容器并启动     可选参数(-d 后台方式运行 || -it 使用交互方式运行, 进入容器查看内容  ||  -P 指定容器的端口  || -p 随机指定端口)
                                               docker ps 列出运行的容器     -a 列出当前正在运行的容器, 带出历史运行过的容器
-                                              docker
-                                              docker
-    
+                                              exit    退出容器             Ctrl + P + Q 容器停止不退出
+                                              docker rm 容器ID   删除指定的容器           docker rm -f $(docker ps -aq)   删除所有的容器       docker ps -a -qixargs docker rm   删除所有的容器
+                                              docker start  容器ID     启动容器
+                                              docker restart  容器ID     重启容器
+                                              docker stop  容器ID   停止当前正在运行的容器
+                                              docker kill  容器ID   强制停止当前的容器
+                                   
+                                    *  常用的其他命令 
+                                              后台启动容器
+                                              docker logs -f -t --tail 容器, 没有日志        - tf 显示日志         --tail number 显示日志条数
+                                              docker top 容器ID        查看容器中的进程命令
+                                              docker inspect 容器ID    查看容器的元数据
+                                              docker exec -it 容器ID bashShell  进入当前正在运行的容器             docker attach 容器ID
+                                              
+
+
+
 
 
  - Docker镜像
