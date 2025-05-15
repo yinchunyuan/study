@@ -6,6 +6,9 @@
               * Docker的核心思想是集装箱(看它的logo ~ )
 
  - Docker安装(看官方文档即可)
+   镜像(image)         可以创建容器
+   容器(container)
+   仓库(repository)    
 
  - Docker命令: 镜像命令、容器命令、操作命令......
               Docker的常用命令: 
