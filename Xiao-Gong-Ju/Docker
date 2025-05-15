@@ -47,8 +47,11 @@
                                               docker exec -it 容器ID bashShell  进入当前正在运行的容器             docker attach 容器ID
                                               docker cp 容器ID: 容器路径   目的主机路径      从容器内拷贝文件到主机上
                                               
-
-
+ - 部署Nginx 
+       搜索镜像  search
+       下载镜像  pull
+       启动镜像  -d 后台运行
+       端口暴露  
 
 
 
