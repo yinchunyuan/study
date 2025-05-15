@@ -45,6 +45,7 @@
                                               docker top 容器ID        查看容器中的进程命令
                                               docker inspect 容器ID    查看容器的元数据
                                               docker exec -it 容器ID bashShell  进入当前正在运行的容器             docker attach 容器ID
+                                              docker cp 容器ID: 容器路径   目的主机路径      从容器内拷贝文件到主机上
                                               
 
 
