@@ -13,3 +13,7 @@
   <title> </title> 是文档的标题
   <body> </body>   页面内容基本都在body里
  文档的后缀名必须是.html 或者 .htm   浏览器的作用是读取HTML文档的内容, 并以网页形式显示它们
+
+
+
+- 安装Open in Browser后, 可以在Vscode中直接鼠标右键打开它在浏览器中的显示
