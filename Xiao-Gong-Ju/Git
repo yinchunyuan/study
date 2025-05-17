@@ -38,7 +38,9 @@ CS61B 实验4 有关于Git的详细使用
 
 
 
-
+- Github    Action的Workflow   
+            Workflow文件采用Yaml格式, 文件名可以任意取, 但是后缀名统一为.yml
+            Github只要发现.github/workflows目录里有.yml文件, 就会按文件中所指定的触发条件, 在符合条件时自动运行该文件中的工作流程
 
 
 
