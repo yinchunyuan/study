@@ -20,7 +20,7 @@ CS61B 实验4 有关于Git的详细使用
 常用命令: 
          · git init 初始化git仓库
          · git clone HTTPS或SSH链接  把远程仓库克隆到本地, SSH链接需要在Github账户中添加本地的SSH密钥
-         · git pull origin  获取远程库最新更改的命令
+         · git pull origin main/master 在本地获取远程仓库最新更改的命令   (git pull = git fetch + git merge) 
          · git add 文件夹或文件名称   把文件添加到暂存区         git add . 把当前目录下的所有文件添加到暂存区
          · git status 检查分支状态(看进行了哪些增加、删除等操作)
          · git commit -m "***"  提交更改       *** 里应简洁明确地表示出所做的更改 
@@ -32,7 +32,7 @@ CS61B 实验4 有关于Git的详细使用
 
 
 
-
+其他的一些东西: 
 一般, Git 的数据模型或表示形式是基于链表的
 -  自己写一个Git
 
@@ -41,6 +41,13 @@ CS61B 实验4 有关于Git的详细使用
 - Github    Action的Workflow   
             Workflow文件采用Yaml格式, 文件名可以任意取, 但是后缀名统一为.yml
             Github只要发现.github/workflows目录里有.yml文件, 就会按文件中所指定的触发条件, 在符合条件时自动运行该文件中的工作流程
+
+
+
+
+- 怎么在本地仓库同步远程仓库的最新代码(2025-5-21周三)
+  先检查分支状态  git branch          git status        如果不在目标分支, 则切换到该分支 git checkout main/master
+  再使用git pull(git pull = git fetch + git merge) 从远程仓库下载最新代码
 
 
 
