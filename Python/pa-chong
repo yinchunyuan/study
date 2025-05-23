@@ -1,3 +1,5 @@
+爬虫的目的: 获得数据   主要和HTML打交道
+
 前言:
 感觉爬虫深入学就会有很多东西要学, 反正现在是一把抓, 慢慢来, 路就会逐渐清晰了 
 开始时连库是什么都不知道......唉, 有时真感慨自己是个废物, 啥也不会的废物
@@ -13,11 +15,27 @@
 - 爬虫分类: 通用爬虫、聚焦爬虫、增量式爬虫(按不同的目的有不同的分类)
 
 
-- 爬虫模块: · requests 作用: 模仿浏览器发送请求
-           · scrapy框架: 常用的爬虫框架Scrapy;  Scrapy是一个基于Twisted的开源的Python爬虫框架
+- 爬虫模块:  · requests 作用: 模仿浏览器发送请求
+            · scrapy框架: 常用的爬虫框架Scrapy;  Scrapy是一个基于Twisted的开源的Python爬虫框架
 
 
 爬虫软件
 - 易采集EasySpider: 无代码可视化的爬虫, 可以从官网 https://easyspider.cn 上下载, 也可以从GitHub上下载
+
+
+
+什么是网页抓取
+- 网页抓取是从Internet收集信息的过程
+
+2025-5-23周五
+- HTTP(Hypertext Transfer Protocol), 即超文本传输协议    包含请求行、请求头、请求体
+  HTTP请求最常见的两种请求方法是GET方法(获得数据)和POST方法(创建数据)
+  爬虫第一步: 获取网页内容(HTTP请求、Python的Requests库) 
+      第二步: 解析网页内容(HTML网页结构、Python的Beautiful Soup库, 这个库可以帮助解析获取到的HTML内容)
+      第三步: 储存或分析数据
+
+- 一个网页有三大技术要素: HTML、CSS、JavaScript
+  HTML定义网页的结构和信息、CSS定义网页的样式、 JavaScript定义用户和网页的交互逻辑
+  HTML标签
 
 
