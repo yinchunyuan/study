@@ -42,7 +42,9 @@ Python有很多版本, Python 3是目前最稳定的版本 (Python 2.7之类的�
 
 - // 除之后向下取到最近的整数, 和单独的/ 不一样
 
-
+-   if __name__ == "__main__":
+    main()
+    这是Pyhton常用的一个代码结构, 判断当前模块是否作为主程序运行
 
 - Requests 库提供了一种用户友好的方式来使用 Python 从 Internet 上抓取静态 HTML
 一些抽象概念:
