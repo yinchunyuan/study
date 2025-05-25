@@ -19,7 +19,7 @@
             · scrapy框架: 常用的爬虫框架Scrapy;  Scrapy是一个基于Twisted的开源的Python爬虫框架
 
 
-爬虫软件
+爬虫软件:
 - 易采集EasySpider: 无代码可视化的爬虫, 可以从官网 https://easyspider.cn 上下载, 也可以从GitHub上下载
 
 
