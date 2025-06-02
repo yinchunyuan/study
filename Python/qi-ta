@@ -1,0 +1,42 @@
+2025-6-2 凌晨0:04
+读源码
+Python入门:
+        在使用Python前, 需要设置Python环境
+        首先需要选择Python解释器
+        不同操作系统安装Python的步骤也不一样
+        安装和使用Python包: 使用 python --version 命令可以查看 python 版本
+        - pipenv是Python项目的依赖项管理器
+
+Python 开发环境:
+        文本编辑器: Vim(使用快捷键操作)
+                   Emacs(本身带有一个Python模式)
+        IDE:
+            PyCharm/IntelliJ IDEA
+        
+        虚拟环境:(可以避免版本冲突):
+            pyenv
+
+
+HTTP 协议: 超文本传输协议(HTTP)
+HTTP是万维网数据通信的基础
+    
+HTML抓取: 网页是用HTML编写的     
+
+
+
+
+OpenCV(开源计算机视觉)
+
+
+
+2025-6-2 周一
+Python学习资源:
+1.Python资源大全:一个 Python 资源精选列表;  地址:https://github.com/vinta/awesome-python
+2.Python 精选案例:收集了将近 400 个开源 Python 应用程序  地址:https://github.com/mahmoud/awesome-python-applications
+3.Python指南: 关于 Python 日常安装、配置和使用的最佳实践手册，包括 pip、numpy、virtualenv等的介绍   地址:https://github.com/realpython/python-guide
+4.Python简明教程:面向 Python 小白的教程，你只需要知道如何保存一个保存文本文件即可开始学习。地址:https://github.com/swaroopch/byte-of-python
+5.基于 Python 3 的数据结构与算法实现: GitHub 上标星 20K 的Python数据结构与算法实现   地址:https://github.com/keon/algorithms
+6.做个 Python 项目：教你搞个爬虫、做个机器人、搞个 Web项目   从项目入手, 快速学习 Python。地址：https://github.com/tuvtran/project-based-learning#python
+
+
+
