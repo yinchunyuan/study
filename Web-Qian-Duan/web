@@ -44,6 +44,23 @@
 2025-6-3 周二
 - HTML  CSS
 
+2025-6-10 周二
+- text-align水平对齐
+  用于背景色 background-color
+  用于文本颜色 color
+  用于文本字体 font-family
+  用于文本大小 font-size
+  用于文本对齐 text-align
+  <b>- 粗体文本
+  <strong>- 重要文本
+  <i>- 斜体文本
+  <em>- 强调的文本
+  <mark>- 标记的文本
+  <small>- 较小的文本
+  <del>- 删除的文本
+  <ins>- 插入的文本
+  <sub>- 下标文本
+  <sup>- 上标文本
 
 
 

@@ -61,7 +61,10 @@ Python有很多版本, Python 3是目前最稳定的版本 (Python 2.7之类的�
       
 
 
-
+2025.6.5 周四
+- Jupyter Notebook 是一个开源的交互式计算环境
+  用它编写的文件名后缀是.ipynb
+  
 
 
 
