@@ -38,6 +38,7 @@
                                               docker restart  容器ID     重启容器
                                               docker stop  容器ID   停止当前正在运行的容器
                                               docker kill  容器ID   强制停止当前的容器
+                                              docker compose  定义运行多容器 
                                    
                                     *  常用的其他命令 
                                               后台启动容器
