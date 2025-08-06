@@ -13,3 +13,7 @@
   可以自由修改、推送代码到自己fork的仓库, 但需通过Pull Request(PR)向原仓库贡献代码
   fork适合无权限贡献者   clone权限取决于原仓库设置
   
+
+CI/CD 持续集成/ 持续部署
+编写YAML文件
+Github个人访问令牌
