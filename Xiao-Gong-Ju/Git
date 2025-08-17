@@ -41,9 +41,9 @@ CS61B 实验4 有关于Git的详细使用
 -  也可以借助Github Pages搭建一个网站作为练习项目试一下, 很有成就感  
 
 
-- Github    Action的Workflow   
-            Workflow文件采用Yaml格式, 文件名可以任意取, 但是后缀名统一为.yml
-            Github只要发现.github/workflows目录里有.yml文件, 就会按文件中所指定的触发条件, 在符合条件时自动运行该文件中的工作流程
+- Github    Action 的 Workflow   
+            Workflow 文件采用 Yaml 格式, 文件名可以任意取, 但是后缀名统一为.yml
+            Github只要发现.github/workflows 目录里有.yml 文件, 就会按文件中所指定的触发条件, 在符合条件时自动运行该文件中的工作流程
             GitHub Actions 是每个 GitHub 仓库都有的 CI/CD 工具
             可以通过创建 .github/workflows 文件夹并在其中放置工作流 YAML 文件来配置 GitHub Actions
             工作流组件包括事件、作业、运行程序、步骤和操作
@@ -53,8 +53,14 @@ CS61B 实验4 有关于Git的详细使用
   再使用git pull(git pull = git fetch + git merge) 从远程仓库下载最新代码
 
 
+2025-8-17 周日
+Github Wiki 是关于仓库
+
+
+
 现在依旧是菜鸟。。。
 切忌好高骛远(个人惨痛教训)
 (提交的东西是被看的, 所以肯定和单纯的个人学习笔记记录有差别)
+
 
 
