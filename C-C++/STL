@@ -8,6 +8,7 @@
 
 
 - 向量的头文件: vector
+std:: vector
 
 
 - 排序的头文件: algorithm

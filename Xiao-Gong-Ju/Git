@@ -15,6 +15,7 @@ Git学习路线
 个人感觉Git的学习主要在于知道相关的命令, 然后就是大量的使用了.
 CS61B 实验4 有关于Git的详细使用
 
+
 常用命令: 
          · git init                     初始化git仓库
          · git clone HTTPS或SSH链接     把远程仓库克隆到本地, SSH链接需要在Github账户中添加本地的SSH密钥
@@ -32,7 +33,7 @@ CS61B 实验4 有关于Git的详细使用
          · git revert                   撤销提交
          · git stash                    暂存修改        git stash list 查看所有暂存记录
          · git cherry-pick              选择提交
-         · git submodule                子模块管理
+         · git submodule                子模块管理      git submodule add <子模块仓库地址> <本地路径>
 
 其他的一些东西: 
 一般, Git 的数据模型或表示形式是基于链表的
@@ -40,14 +41,21 @@ CS61B 实验4 有关于Git的详细使用
 -  也可以借助Github Pages搭建一个网站作为练习项目试一下, 很有成就感  
 
 
-- Github    Action的Workflow   
-            Workflow文件采用Yaml格式, 文件名可以任意取, 但是后缀名统一为.yml
-            Github只要发现.github/workflows目录里有.yml文件, 就会按文件中所指定的触发条件, 在符合条件时自动运行该文件中的工作流程
-
+- Github    Action 的 Workflow   
+            Workflow 文件采用 Yaml 格式, 文件名可以任意取, 但是后缀名统一为.yml
+            Github只要发现.github/workflows 目录里有.yml 文件, 就会按文件中所指定的触发条件, 在符合条件时自动运行该文件中的工作流程
+            GitHub Actions 是每个 GitHub 仓库都有的 CI/CD 工具
+            可以通过创建 .github/workflows 文件夹并在其中放置工作流 YAML 文件来配置 GitHub Actions
+            工作流组件包括事件、作业、运行程序、步骤和操作
 
 - 怎么在本地仓库同步远程仓库的最新代码(2025-5-21周三晚九点十分左右)
   先检查分支状态  git branch -a         git status        如果不在目标分支, 则切换到该分支 git checkout main/master
   再使用git pull(git pull = git fetch + git merge) 从远程仓库下载最新代码
+
+
+2025-8-17 周日
+Github Wiki 是关于仓库
+
 
 
 现在依旧是菜鸟。。。
@@ -55,5 +63,9 @@ CS61B 实验4 有关于Git的详细使用
 (提交的东西是被看的, 所以肯定和单纯的个人学习笔记记录有差别)
 
 
+<<<<<<< HEAD
 2025-7-22 周二
 在github上点击左上角的黑色章鱼猫可以回到最开始的页面
+=======
+
+>>>>>>> 2442abef6780f5a4afc47bf6ed93d3e093e5f6ad
