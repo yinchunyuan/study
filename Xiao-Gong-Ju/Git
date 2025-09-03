@@ -52,31 +52,23 @@ CS61B 实验4 有关于Git的详细使用
   先检查分支状态  git branch -a         git status        如果不在目标分支, 则切换到该分支 git checkout main/master
   再使用git pull(git pull = git fetch + git merge) 从远程仓库下载最新代码
 
-
 2025-8-17 周日
 Github Wiki 是关于仓库
-
-
 
 现在依旧是菜鸟。。。
 切忌好高骛远(个人惨痛教训)
 (提交的东西是被看的, 所以肯定和单纯的个人学习笔记记录有差别)
 
-
-<<<<<<< HEAD
 2025-7-22 周二
 在github上点击左上角的黑色章鱼猫可以回到最开始的页面
-=======
-
->>>>>>> 2442abef6780f5a4afc47bf6ed93d3e093e5f6ad
-
-
 
 2025-9-2 周二 15:32
 git branch 输入后没有任何显示(创建分支后不显示东西)是因为仓库目前还没有任何提交
 
 git commit 提交---编写 commit message 是一个规范, 记不住模版, 总是忘记, 这个需要重视, 多学学
 
+2025-9-3 周三 15:43
+GitHub 个人令牌(主要用于身份验证)
 
 
 
