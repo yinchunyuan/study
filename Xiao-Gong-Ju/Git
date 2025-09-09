@@ -76,3 +76,6 @@ github-----pull request(s)      Pull Request(简称PR), 意为合并请求
 合并代码有三种方式: Squash and merge(压缩合并)、Create a new commit、Rebase and merge(变基合并) 
 合并完成后, 可以清理分支, 这样就不会使分支太多弄不清每个分支具体是干什么的了, 方便管理
 code review(代码审查)
+
+2025-9-9 周二 11:20
+Github CLI 
