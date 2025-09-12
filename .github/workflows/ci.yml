@@ -1,6 +1,6 @@
 name: Metrics
 on:
-  # 每天自动更新，或手动触发
+ 
   schedule: [{cron: "0 21 * * *"}]
   workflow_dispatch:
 
