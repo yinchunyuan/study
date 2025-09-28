@@ -2,7 +2,6 @@
 虚拟机(VMware、VirtualBox等)
 发行版(Ubuntu、CentOS、Debian等)
 
-
 - WSL (刚见到的新概念, 有些是搜索引擎的解释)
      WSL是适用于 Linux 的 Windows 子系统 WSL(Windows Subsystem for Linux) 不是双系统
      它以一个窗口形式存在, 本质上是在 Windows 系统内模拟运行 Linux 环境
@@ -38,7 +37,6 @@ snap apt install 名字    安装命令
              :w!      强制保存
              ZZ       直接退出
 
-
 - Shell (Bash Shell)   
         *  Shell 是操作系统的最外层, 是用户与操作系统之间沟通的桥梁, 内核与用户之间的过渡层
            Shell 的重定向: > 输出;  < 输入;  | 管道符
@@ -46,10 +44,7 @@ snap apt install 名字    安装命令
            Linux默认的 Shell 是 bash 
         *  编写 Shell 脚本
 
-
 - 环境变量也叫全局变量, 环境变量最好大写, 变量用 " = " 赋值, 值和变量间不允许有空格, 单引号不解析变量, 双引号可能调用变量
-
-
 
 - 进程、线程
   进程简单理解就是运行的程序
@@ -62,11 +57,3 @@ snap apt install 名字    安装命令
 .ssh   可以在多个不同地方用同一个密钥, 只需分别添加到每个平台的 SSH 密钥设置中 
 SSH 密钥对(公钥和私钥) 主要作用是进行身份验证 
 验证 SSH 连接: 在 WSL 终端中执行这个命令 ssh -T git@github.com, 第一次连接会出现东西, 点 yes
-
-
-
-
-
-
-
-
