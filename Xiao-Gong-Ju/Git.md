@@ -14,4 +14,7 @@
      - git switch -  切换到上一个分支
 
 ## 2. Github CLI 
-是 Github 官方的命令行工具，有[官方文档](https://cli.github.com/manual/)可以学习
+是 Github 官方的命令行工具，有[官方文档](https://cli.github.com/manual/)可以学习，也可以借助 DeepSeek 和豆包等学习
+
+## 3. Github Actions
+参考[官方文档](https://github.com/features/actions) 
