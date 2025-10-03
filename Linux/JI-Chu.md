@@ -6,7 +6,7 @@
      WSL是适用于 Linux 的 Windows 子系统 WSL(Windows Subsystem for Linux) 不是双系统
      它以一个窗口形式存在, 本质上是在 Windows 系统内模拟运行 Linux 环境
      功能: 使用户无需借助虚拟机, 就可以在 Windows 中运行 Linux 的命令行工具和应用程序, Linux 的发行版可以在 WSL 中安装使用
-     (在 下载输入密码时,看不到密码没事, 这是Linux系统的安全机制, 不是出问题了, 正常输入密码后按回车即可)
+    (在 下载输入密码时,看不到密码没事, 这是Linux系统的安全机制, 不是出问题了, 正常输入密码后按回车即可)
 
 - 知道相关的命令 
 cd                  切换目录            (change directory)
@@ -57,3 +57,4 @@ snap apt install 名字    安装命令
 .ssh   可以在多个不同地方用同一个密钥, 只需分别添加到每个平台的 SSH 密钥设置中 
 SSH 密钥对(公钥和私钥) 主要作用是进行身份验证 
 验证 SSH 连接: 在 WSL 终端中执行这个命令 ssh -T git@github.com, 第一次连接会出现东西, 点 yes
+
